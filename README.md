@@ -10,7 +10,9 @@
 
 (line #223) to save .jpg images and (line #227) to save annotations on separate folders for each class (also change class number on line #229 
 
-[iii] After modifications, run the detector from live webcam or video file which specifically shows only one particular persons face. 
+[iii] After modifications, run the detector from live webcam or video file using this command which specifically shows only one particular persons face.
+
+"./darknet yolo demo cfg/yolo-face.cfg yolo-face_final.weights"
 
 [iv] Repeat the process for every persons you want to recognize and modify training data location and class number accordingly.
 About ~2k face images per person is enough to recognize individual faces but to improve accuracy, more data could be added.
